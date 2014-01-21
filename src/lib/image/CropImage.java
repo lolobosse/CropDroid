@@ -54,7 +54,6 @@ import eu.janmuller.android.simplecropimage.R;
 /**
  * The activity can crop specific region of interest from an image.
  */
-@TargetApi(Build.VERSION_CODES.DONUT)
 public class CropImage extends MonitoredActivity {
 
 	final int IMAGE_MAX_SIZE = 1024;
@@ -100,8 +99,6 @@ public class CropImage extends MonitoredActivity {
 
 	private final BitmapManager.ThreadSet mDecodingThreads = new BitmapManager.ThreadSet();
 
-	@TargetApi(Build.VERSION_CODES.HONEYCOMB)
-	@SuppressLint("NewApi")
 	@Override
 	public void onCreate(Bundle icicle) {
 
