@@ -50,7 +50,7 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
             }
 
             // cropped bitmap
-            Bitmap b = MediaStore.Images.Media.getBitmap(this.getContentResolver(), Uri.parse(uri);
+            Bitmap b = MediaStore.Images.Media.getBitmap(this.getContentResolver(), Uri.parse(uri));
             
             break;
     }
